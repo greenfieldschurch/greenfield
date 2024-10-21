@@ -9,10 +9,10 @@ function MissionAndVision() {
 
   return (
     <>
-    <div className='mission-and-vision-container'/>
+    <div className='mission-and-vision-container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/cross.jpg'})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}/>
     <div className='mission_and_vision'>
       <h1>Mission</h1>
-      <div className='mission_and_vision__container'>
+      <div className='mission_and_vision__container' >
         <div className='mission_and_vision__wrapper'>
           <p>
             Our mission at Greenfields Community Church is to be a Christ-centered community that reaches out with love, hope, and compassion. We are dedicated to sharing the Gospel, serving others, and providing a welcoming environment where people from all backgrounds can encounter God, grow in faith, and live out their purpose. Through worship, fellowship, and acts of service, we aim to make a meaningful impact on both our local community and beyond.
