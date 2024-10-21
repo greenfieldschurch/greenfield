@@ -1,6 +1,6 @@
 
 .mission-and-vision-container {
-    background: url('../../public/images/cross.jpg') center center/cover no-repeat;
+    background: url('./../../public/images/cross.jpg') center center/cover no-repeat;
     height: 50vh;
     width: 100%;
 }
