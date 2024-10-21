@@ -9,7 +9,7 @@ function MissionAndVision() {
 
   return (
     <>
-    <div className='mission-and-vision-container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/cross.jpg'})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}/>
+    <div className='mission-and-vision-container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + 'images/cross.jpg'})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}/>
     <div className='mission_and_vision'>
       <h1>Mission</h1>
       <div className='mission_and_vision__container' >
