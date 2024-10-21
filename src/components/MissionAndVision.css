@@ -1,0 +1,30 @@
+
+.mission-and-vision-container {
+    background: url('/src/images/cross.jpg') center center/cover no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+  
+.mission_and_vision {
+  padding: 4rem;
+  background: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+.mission_and_vision__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mission_and_vision__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
