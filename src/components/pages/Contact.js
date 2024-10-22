@@ -8,7 +8,7 @@ function Contact() {
   return (
     <>
     <div className = "contact-section">
-      <div className = "contact-bg" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + 'images/contact-bg.jpg'})` }}>
+      <div className = "contact-bg" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/contact-bg.jpg'})` }}>
         {/* <h3>Get in Touch with Us</h3> */}
         <h2>contact us</h2>
         <div className = "line">
