@@ -49,7 +49,7 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               GREENFIELDS
-              <img src='images/footerlogo.png' width="50" height="50" style={{marginLeft:10}}/> 
+              <img src={`${process.env.PUBLIC_URL}/images/footerlogo.png`} width="50" height="50" style={{marginLeft:10}}/> 
             </Link>
           </div>
           <small class='website-rights'>GREENFIELDS COMMUNITY CHURCH © 2024</small>
