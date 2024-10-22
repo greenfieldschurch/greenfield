@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import MissionAndVision from './components/pages/MissionAndVision';
 import Footer from './components/Footer';
 import Contact from './components/pages/Contact';
+import Media from './components/pages/Media';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' exact Component={Home}/>
           <Route path='/vision' Component={MissionAndVision} />
           <Route path='/contact' Component={Contact} />
+          <Route path='/media' Component={Media} />
         </Routes>
         <Footer />
       </Router>
