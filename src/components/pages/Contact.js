@@ -26,6 +26,7 @@ function Contact() {
             <span><i className = "fas fa-mobile-alt"></i></span>
             <span>Phone No.</span>
             <span className = "text">+447549223856</span>
+            <span className = "text">+447880114037</span>
           </div>
           <div>
             <span><i className = "fas fa-envelope-open"></i></span>
