@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://greenfieldschurch.github.io/greenfield/static/css/main.ce762b7f.css",
-    "main.js": "https://greenfieldschurch.github.io/greenfield/static/js/main.6f652f1d.js",
+    "main.js": "https://greenfieldschurch.github.io/greenfield/static/js/main.bd3dbe6d.js",
     "index.html": "https://greenfieldschurch.github.io/greenfield/index.html",
     "main.ce762b7f.css.map": "https://greenfieldschurch.github.io/greenfield/static/css/main.ce762b7f.css.map",
-    "main.6f652f1d.js.map": "https://greenfieldschurch.github.io/greenfield/static/js/main.6f652f1d.js.map"
+    "main.bd3dbe6d.js.map": "https://greenfieldschurch.github.io/greenfield/static/js/main.bd3dbe6d.js.map"
   },
   "entrypoints": [
     "static/css/main.ce762b7f.css",
-    "static/js/main.6f652f1d.js"
+    "static/js/main.bd3dbe6d.js"
   ]
 }
