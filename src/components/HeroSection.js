@@ -6,6 +6,7 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/home.jpg'})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+      <img src={`${process.env.PUBLIC_URL}/images/logo.png`} /> 
       <h1>Making a difference</h1>
       <p>WHEREVER THE RIVER GOES, IT BRINGS LIFE</p>
       <p className='chapter'>EZEKIEL 47:9</p>

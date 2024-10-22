@@ -3,10 +3,17 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:first baseline;
     align-items: center;
     /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
     object-fit: contain;
+}
+
+.hero-container > img {
+  width: 250px;
+  height: 250px;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
   
   .hero-container > h1 {
@@ -48,6 +55,7 @@
       font-size: 500%;
       margin-top: 10%;
     }
+    
   }
   
   @media screen and (max-width: 768px) {
@@ -73,6 +81,13 @@
     .btn {
       width: 100%;
     }
+
+    .hero-container > img {
+      width: 200px;
+      height: 200px;
+      margin-top: 10%;
+      margin-bottom: 4%;
+    }
   }
 
   @media only screen and (max-width: 375px) {
@@ -87,5 +102,12 @@
 
     .hero-container > .chapter {
       font-size: 80%;
+    }
+
+    .hero-container > img {
+      width: 150px;
+      height: 150px;
+      margin-top: 10%;
+      margin-bottom: 4%;
     }
   }
