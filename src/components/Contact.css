@@ -65,6 +65,9 @@ body{
     margin: 0 auto;
     padding: 0 1rem;
 }
+.contact-section {
+    background-color: #fff;
+}
 .contact-info{
     margin: 2rem 0;
     text-align: center;
