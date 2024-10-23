@@ -10,6 +10,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
+
+.contact_link {
+    color: inherit;
+} 
+
 .contact-bg{
     height: 40vh;
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/contact-bg.jpg); */

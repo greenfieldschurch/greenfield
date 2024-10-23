@@ -29,6 +29,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
+            <Link to='/'>Home</Link>
             <Link to='/vision'>Mission & Vision</Link>
           </div>
           <div class='footer-link-items'>
@@ -41,6 +42,7 @@ function Footer() {
             <h2>Social Media</h2>
             <Link to='https://www.facebook.com/people/Greenfields-Church-Morriston/61555144023429'>Facebook</Link>
             <Link to='https://www.youtube.com/@GreenfieldsChurchMorriston'>Youtube</Link>
+            <Link to='/media'>Latest Videos</Link>
           </div>
         </div>
       </div>
