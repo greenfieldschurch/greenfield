@@ -7,6 +7,8 @@ import MissionAndVision from './components/pages/MissionAndVision';
 import Footer from './components/Footer';
 import Contact from './components/pages/Contact';
 import Media from './components/pages/Media';
+import Donations from './components/pages/Donations';
+import Projects from './components/pages/Projects';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Routes>
           <Route path='/' exact Component={Home}/>
           <Route path='/vision' Component={MissionAndVision} />
+          <Route path='/projects' Component={Projects} />
+          <Route path='/donations' Component={Donations} />
           <Route path='/contact' Component={Contact} />
           <Route path='/media' Component={Media} />
         </Routes>

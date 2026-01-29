@@ -75,6 +75,7 @@ function Contact() {
                 Sunday
               </span>
               <span className="text">Worship 11am - 12:30pm</span>
+              <span className="text">Hindi Worship 7pm</span>
               <span className="text">Sunday School 12:30pm - 1:15pm</span>
               <span className="text">Every 4th Sunday - Youth meeting</span>
 

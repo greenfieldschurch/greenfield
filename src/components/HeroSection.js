@@ -1,15 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
+  const [verse, setVerse] = useState('WHEREVER THE RIVER GOES, IT BRINGS LIFE');
+  const [reference, setReference] = useState('EZEKIEL 47:9');
+
+  useEffect(() => {
+    // Fetch daily Bible verse
+    fetch('https://beta.ourmanna.com/api/v1/get/?format=json')
+      .then(response => response.json())
+      .then(data => {
+        if (data && data.verse && data.verse.details) {
+          setVerse(data.verse.details.text.toUpperCase());
+          setReference(data.verse.details.reference.toUpperCase());
+        }
+      })
+      .catch(error => {
+        console.error('Failed to fetch daily verse, using default:', error);
+        // Keep default values on error
+      });
+  }, []);
+
   return (
     <div className='hero-container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/home.jpg'})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
       <img src={`${process.env.PUBLIC_URL}/images/logo.png`} /> 
       <h1>Making a difference</h1>
-      <p>WHEREVER THE RIVER GOES, IT BRINGS LIFE</p>
-      <p className='chapter'>EZEKIEL 47:9</p>
+      <p>{verse}</p>
+      <p className='chapter'>{reference}</p>
       <div className='hero-btns'>
         <Button
           className='btns'

@@ -27,6 +27,7 @@
   font-size: 1rem;
   display: block;
   align-items: center;
+  font-weight: 700;
 }
 
 .fa-typo3 {
@@ -36,7 +37,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -73,6 +74,23 @@
 
 .menu-icon {
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-logo {
+    font-size: 0.85rem;
+    margin-left: 10px;
+  }
+
+  .nav-menu {
+    grid-gap: 5px;
+    width: 65vw;
+  }
+
+  .nav-links {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -116,9 +134,11 @@
 
   .navbar-logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: 0;
   }
 
   .menu-icon {

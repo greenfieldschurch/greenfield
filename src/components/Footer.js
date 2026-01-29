@@ -31,6 +31,8 @@ function Footer() {
             <h2>About Us</h2>
             <Link to='/'>Home</Link>
             <Link to='/vision'>Mission & Vision</Link>
+            <Link to='/projects'>Projects</Link>
+            <Link to='/donations'>Donations</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
