@@ -8,8 +8,8 @@ function HeroSection() {
   const [reference, setReference] = useState('EZEKIEL 47:9');
 
   useEffect(() => {
-    // Fetch daily Bible verse
-    fetch('https://beta.ourmanna.com/api/v1/get/?format=json')
+    // Fetch random Bible verse
+    fetch('https://beta.ourmanna.com/api/v1/get/?format=json&order=random')
       .then(response => response.json())
       .then(data => {
         if (data && data.verse && data.verse.details) {
@@ -18,7 +18,7 @@ function HeroSection() {
         }
       })
       .catch(error => {
-        console.error('Failed to fetch daily verse, using default:', error);
+        console.error('Failed to fetch random verse, using default:', error);
         // Keep default values on error
       });
   }, []);

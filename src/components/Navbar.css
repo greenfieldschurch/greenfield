@@ -25,9 +25,16 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 1rem;
-  display: block;
+  display: flex;
   align-items: center;
+  gap: 10px;
   font-weight: 700;
+}
+
+.navbar-logo-img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
 }
 
 .fa-typo3 {
@@ -139,6 +146,13 @@
     transform: translate(-50%, -50%);
     text-align: center;
     margin-left: 0;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navbar-logo-img {
+    height: 40px;
+    width: 40px;
   }
 
   .menu-icon {
@@ -181,5 +195,14 @@
 @media only screen and (max-width: 375px) {
   .navbar-logo {
     width: 50%;
+  }
+  
+  .navbar-logo span {
+    font-size: 0.75rem;
+  }
+  
+  .navbar-logo-img {
+    height: 35px;
+    width: 35px;
   }
 }

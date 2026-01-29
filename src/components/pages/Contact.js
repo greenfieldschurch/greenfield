@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../Contact.css";
+import "../HeroSection.css";
 
 function Contact() {
   useEffect(() => {
@@ -27,6 +28,20 @@ function Contact() {
         </div>
 
         <div className="contact-body">
+          <div className="contact-form-section">
+            <div className="google-form-container">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeaNl8ajMBEySsSXwSQmz0cL7ffOiZyelriosARWq33JY-FHA/viewform?embedded=true"
+                className="google-form-iframe"
+                frameBorder="0"
+                marginHeight="0"
+                marginWidth="0"
+              >
+                Loading…
+              </iframe>
+            </div>
+          </div>
+
           <div className="contact-info">
             <div>
               <span>
@@ -66,32 +81,6 @@ function Contact() {
               <span className="text">SA6 6NR</span>
             </div>
             </a>
-            <div>
-              <span>
-                <i className="fas fa-clock"></i>
-              </span>
-              <span className="text">Timings</span>
-              <span className="text" style={{ "text-decoration": "underline" }}>
-                Sunday
-              </span>
-              <span className="text">Worship 11am - 12:30pm</span>
-              <span className="text">Hindi Worship 7pm</span>
-              <span className="text">Sunday School 12:30pm - 1:15pm</span>
-              <span className="text">Every 4th Sunday - Youth meeting</span>
-
-              <span className="text" style={{ "text-decoration": "underline" }}>
-                Friday
-              </span>
-              <span className="text">Bible study - 7pm to 8pm</span>
-
-              <span className="text" style={{ "text-decoration": "underline" }}>
-                Saturday
-              </span>
-              <span className="text">Malayalam meeting - 7pm to 8:30pm</span>
-
-              <span className="text">Every 4th Saturday - Fasting Prayer</span>
-              <span className="text">Every 3rd Saturday - Evangelism</span>
-            </div>
           </div>
 
           {/* <div className = "contact-form">
@@ -100,6 +89,24 @@ function Contact() {
             <input type = "submit" className = "send-btn" value = "send message"/>
           </div>
         </div> */}
+        </div>
+
+        <div className='calendar-section'>
+          <div className='calendar-container'>
+            <div className='calendar-header'>
+              <i className='far fa-calendar-alt calendar-icon'></i>
+              <h2>Upcoming Events</h2>
+              <p className='calendar-subtitle'>Join us for worship and fellowship</p>
+            </div>
+            <div className='calendar-wrapper'>
+              <iframe 
+                src="https://calendar.google.com/calendar/embed?src=greenfieldscommunitychurch%40gmail.com&ctz=Europe%2FLondon&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&mode=AGENDA"
+                className='calendar-iframe'
+                frameBorder="0" 
+                scrolling="no"
+              ></iframe>
+            </div>
+          </div>
         </div>
 
         <div className="map">

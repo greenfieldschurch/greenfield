@@ -3,7 +3,36 @@ import '../Donations.css';
 
 function Donations() {
   const [currentImage, setCurrentImage] = useState(1);
+  const [loadedImages, setLoadedImages] = useState(new Set([1]));
   const totalImages = 15;
+
+  // Preload an image
+  const preloadImage = (index) => {
+    if (!loadedImages.has(index)) {
+      const img = new Image();
+      img.src = `${process.env.PUBLIC_URL}/images/moriah_${index}.jpg`;
+      img.onload = () => {
+        setLoadedImages(prev => new Set([...prev, index]));
+      };
+    }
+  };
+
+  // Preload next few images in background
+  useEffect(() => {
+    // Preload the next 3 images
+    for (let i = 1; i <= Math.min(3, totalImages); i++) {
+      preloadImage(i);
+    }
+  }, []);
+
+  // Preload next image whenever current image changes
+  useEffect(() => {
+    const nextImage = currentImage >= totalImages ? 1 : currentImage + 1;
+    preloadImage(nextImage);
+    // Also preload the one after that
+    const afterNext = nextImage >= totalImages ? 1 : nextImage + 1;
+    preloadImage(afterNext);
+  }, [currentImage]);
 
   useEffect(() => {
     const interval = setInterval(() => {
