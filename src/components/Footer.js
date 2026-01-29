@@ -3,6 +3,10 @@ import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 function Footer() {
   return (
     <div className='footer-container'>
@@ -29,14 +33,14 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/'>Home</Link>
-            <Link to='/vision'>Mission & Vision</Link>
-            <Link to='/projects'>Projects</Link>
-            <Link to='/donations'>Donations</Link>
+            <Link to='/' onClick={scrollToTop}>Home</Link>
+            <Link to='/vision' onClick={scrollToTop}>Mission & Vision</Link>
+            <Link to='/projects' onClick={scrollToTop}>Projects</Link>
+            <Link to='/donations' onClick={scrollToTop}>Donations</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/contact' onClick={scrollToTop}>Contact</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -44,7 +48,8 @@ function Footer() {
             <h2>Social Media</h2>
             <Link to='https://www.facebook.com/people/Greenfields-Church-Morriston/61555144023429'>Facebook</Link>
             <Link to='https://www.youtube.com/@GreenfieldsChurchMorriston'>Youtube</Link>
-            <Link to='/media'>Latest Videos</Link>
+            <Link to='https://www.instagram.com/greenfieldscommunitychurch/'>Instagram</Link>
+            <Link to='/media' onClick={scrollToTop}>Latest Videos</Link>
           </div>
         </div>
       </div>
@@ -65,6 +70,14 @@ function Footer() {
               aria-label='Facebook'
             >
               <i class='fab fa-facebook-f' />
+            </Link>
+            <Link
+              class='social-icon-link instagram'
+              to='https://www.instagram.com/greenfieldscommunitychurch/'
+              target='_blank'
+              aria-label='Instagram'
+            >
+              <i class='fab fa-instagram' />
             </Link>
             <Link
               class='social-icon-link youtube'
