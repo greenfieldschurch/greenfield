@@ -217,14 +217,17 @@
     width: 100%;
     padding: 0;
     background: #f8f9fa;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
   }
 
   .calendar-iframe {
     width: 100%;
-    height: 800px;
+    height: 600px;
     border: none;
     display: block;
     zoom: 1.2;
+    touch-action: pan-y;
   }
 
   @media screen and (max-width: 768px) {
@@ -253,8 +256,9 @@
     }
 
     .calendar-iframe {
-      height: 700px;
+      height: 550px;
       zoom: 1.15;
+      touch-action: pan-y;
     }
   }
 
@@ -276,7 +280,8 @@
     }
 
     .calendar-iframe {
-      height: 600px;
+      height: 500px;
       zoom: 1.1;
+      touch-action: pan-y;
     }
   }
