@@ -219,6 +219,7 @@
     padding: 0;
     background: #f8f9fa;
     overflow: hidden;
+    touch-action: pan-y;
   }
 
   .calendar-iframe {
@@ -227,6 +228,7 @@
     border: none;
     display: block;
     zoom: 1.2;
+    touch-action: pan-y;
   }
 
   @media screen and (max-width: 768px) {
@@ -257,11 +259,7 @@
     .calendar-iframe {
       height: 550px;
       zoom: 1.15;
-      pointer-events: none;
-    }
-    
-    .calendar-wrapper {
-      pointer-events: auto;
+      touch-action: pan-y;
     }
   }
 
@@ -285,10 +283,6 @@
     .calendar-iframe {
       height: 500px;
       zoom: 1.1;
-      pointer-events: none;
-    }
-    
-    .calendar-wrapper {
-      pointer-events: auto;
+      touch-action: pan-y;
     }
   }
