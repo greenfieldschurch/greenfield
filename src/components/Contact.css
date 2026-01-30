@@ -138,6 +138,41 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    .contact-body {
+        padding: 0;
+    }
+    
+    .form-calendar-wrapper,
+    .contact-map-wrapper {
+        gap: 0;
+        margin: 0;
+    }
+    
+    .contact-form-section {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .google-form-container {
+        border-radius: 0;
+        box-shadow: none;
+        padding: 15px;
+    }
+    
+    .contact-info {
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+    
+    .calendar-section {
+        padding: 2rem 0;
+    }
+    
+    .calendar-container {
+        border-radius: 0;
+        width: 100%;
+    }
+    
     .contact-form-header h2 {
         font-size: 2rem;
     }
@@ -147,11 +182,6 @@ body{
         padding: 0 1rem;
     }
     
-    .google-form-container {
-        padding: 10px;
-        border-radius: 10px;
-    }
-    
     .google-form-iframe {
         height: 850px;
         zoom: 1.1;
@@ -159,6 +189,14 @@ body{
 }
 
 @media screen and (max-width: 480px) {
+    .contact-body {
+        padding: 0;
+    }
+    
+    .google-form-container {
+        padding: 10px;
+    }
+    
     .contact-form-header h2 {
         font-size: 1.5rem;
     }
@@ -170,6 +208,10 @@ body{
     .google-form-iframe {
         height: 800px;
         zoom: 1.05;
+    }
+    
+    .contact-info {
+        padding: 1.5rem 1rem;
     }
 }
 .contact-section {

@@ -182,6 +182,7 @@
     width: 95%;
     overflow: hidden;
     animation: fadeInUp 1s ease-out;
+    position: relative;
   }
 
   .calendar-header {
@@ -217,8 +218,7 @@
     width: 100%;
     padding: 0;
     background: #f8f9fa;
-    touch-action: pan-y;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
   }
 
   .calendar-iframe {
@@ -227,7 +227,6 @@
     border: none;
     display: block;
     zoom: 1.2;
-    touch-action: pan-y;
   }
 
   @media screen and (max-width: 768px) {
@@ -258,7 +257,11 @@
     .calendar-iframe {
       height: 550px;
       zoom: 1.15;
-      touch-action: pan-y;
+      pointer-events: none;
+    }
+    
+    .calendar-wrapper {
+      pointer-events: auto;
     }
   }
 
@@ -282,6 +285,10 @@
     .calendar-iframe {
       height: 500px;
       zoom: 1.1;
-      touch-action: pan-y;
+      pointer-events: none;
+    }
+    
+    .calendar-wrapper {
+      pointer-events: auto;
     }
   }
